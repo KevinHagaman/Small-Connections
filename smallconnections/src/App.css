@@ -8,24 +8,6 @@
   pointer-events: none;
 
 }
-.App-header p {
-  border: 2px solid;
-  border-radius: 4px;
-  padding: 10px 24px;
-  margin: 5px;
-  transition-duration: 0.4s;
-  color: black;
-}
-.App-header p:hover {
-  background-color: gray;
-  color: black;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: white;
@@ -37,12 +19,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-/*@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/

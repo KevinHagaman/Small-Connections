@@ -1,18 +1,11 @@
-import logo from './SCLogo.png';
+import React from 'react'
+import pg1 from './page1.js'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Sign-up
-        </p>
-        <p>
-          Login
-        </p>
-      </header>
+    <div>      
+      <pg1/>
     </div>
   );
 }
