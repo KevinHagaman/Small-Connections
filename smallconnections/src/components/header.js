@@ -7,7 +7,7 @@ const mainLogo = () => {
     return (
 
         <div>
-            <img src={logo} alt="Logo" />;
+            
         </div>
     )
 }

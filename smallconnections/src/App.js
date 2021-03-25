@@ -1,5 +1,5 @@
 import React from 'react'
-import pg1 from './page1.js'
+import pg1 from './Landing.js'
 import './App.css';
 
 function App() {
