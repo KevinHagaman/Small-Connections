@@ -12,4 +12,12 @@ const mainLogo = () => {
     )
 }
 
+const navBar = () => {
+    return (
+        <div>
+
+        </div>
+    )
+}
+
 export default mainLogo

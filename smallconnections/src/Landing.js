@@ -1,7 +1,7 @@
 import React from 'react'
 import mainLogo from './components/header.js'
 
-const pg1 = () => {
+const Landing = () => {
     return (
 
         <div>
@@ -10,4 +10,4 @@ const pg1 = () => {
     )
 }
 
-export default pg1
+export default Landing
