@@ -1,12 +1,13 @@
 import React from 'react'
-import Landing from './Landing.js'
-import './App.css';
+import Navbar from './components/Navbar';
+import GlobalStyle from './globalStyles';
 
 function App() {
   return (
-    <div>      
-      <Landing/>
-    </div>
+    <>
+      <GlobalStyle />      
+      <Navbar />
+    </>
   );
 }
 
