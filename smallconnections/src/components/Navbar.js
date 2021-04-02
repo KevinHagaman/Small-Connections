@@ -51,7 +51,7 @@ const NavBtn = styled.div`
   margin-right: 24px;
 `;
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <Nav>
             <Logo to='/'>SMALL CONNECTIONS</Logo>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 ))}
             </NavMenu>
             <NavBtn>
-            <Button to="/">Sign In</Button>
+            <Button onClick={props.onSignInClick}>Sign In</Button>
             <Button to="/">Log In</Button>
             </NavBtn>
         </Nav>

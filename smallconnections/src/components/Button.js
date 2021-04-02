@@ -19,8 +19,4 @@ export const Button = styled(Link)`
   padding: 2px 7px;
   margin: 4px;
   font-size: 15px;
-
-  &:hover {
-      transform: translateY(-2px);
-  }
 `
