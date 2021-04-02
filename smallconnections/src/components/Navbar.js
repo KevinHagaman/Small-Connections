@@ -64,8 +64,8 @@ const Navbar = () => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to="/">Sign In</Button>
-                <Button to="/">Log In</Button>
+            <Button to="/">Sign In</Button>
+            <Button to="/">Log In</Button>
             </NavBtn>
         </Nav>
     );
