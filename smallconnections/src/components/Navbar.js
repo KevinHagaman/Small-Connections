@@ -12,7 +12,7 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
-  background: red;
+  background: white;
 `;
 
 const NavLink = css`
@@ -28,10 +28,11 @@ const NavLink = css`
 const Logo = styled(Link)`
   ${NavLink}
   font-style: italic;
+  font-size: 20px;
 `;
 
 const MenuBars = styled.i`
-  
+  display: none;
 `;
 
 const NavMenu = styled.div`
@@ -53,7 +54,7 @@ const NavBtn = styled.div`
 const Navbar = () => {
     return (
         <Nav>
-            <Logo to='/'>Small Connections</Logo>
+            <Logo to='/'>SMALL CONNECTIONS</Logo>
             <MenuBars />
             <NavMenu>
                 {menuData.map((item, index) => (
@@ -64,6 +65,7 @@ const Navbar = () => {
             </NavMenu>
             <NavBtn>
                 <Button to="/">Sign In</Button>
+                <Button to="/">Log In</Button>
             </NavBtn>
         </Nav>
     );

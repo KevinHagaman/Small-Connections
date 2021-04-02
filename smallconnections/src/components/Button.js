@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Button = styled(Link)`
-  background: grey;
+  background-color: white;
+  color: black;
   white-space: nowrap;
   outline: none;
-  border: none;
+  border: 3px solid black;
+  border-radius: 8px;
   min-width: 100px;
   max-width: 200px;
   cursor: pointer;
@@ -15,7 +17,7 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   padding: 2px 7px;
-  color: black;
+  margin: 4px;
   font-size: 15px;
 
   &:hover {
