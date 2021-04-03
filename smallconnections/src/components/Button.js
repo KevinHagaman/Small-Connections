@@ -6,7 +6,7 @@ export const Button = styled(Link)`
   color: black;
   white-space: nowrap;
   outline: none;
-  border: 3px solid black;
+  border: 3px solid #3f51b5;
   border-radius: 8px;
   min-width: 100px;
   max-width: 200px;
@@ -19,4 +19,8 @@ export const Button = styled(Link)`
   padding: 2px 7px;
   margin: 4px;
   font-size: 15px;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
 `

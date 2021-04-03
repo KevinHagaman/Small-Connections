@@ -64,8 +64,8 @@ const Navbar = (props) => {
                 ))}
             </NavMenu>
             <NavBtn>
-            <Button onClick={props.onSignInClick}>Sign In</Button>
-            <Button to="/">Log In</Button>
+            <Button onClick={props.onSignInClick}>Sign Up</Button>
+            <Button onClick={props.onLogInClick}>Log In</Button>
             </NavBtn>
         </Nav>
     );
