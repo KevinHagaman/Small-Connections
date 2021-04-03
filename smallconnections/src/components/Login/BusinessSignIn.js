@@ -16,7 +16,7 @@ import { ButtonGroup } from '@material-ui/core';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" color="textSecondary" align="center" style={{marginTop: "-40px"}}>
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
         Small Connections
@@ -58,11 +58,11 @@ export default function UserSignIn(props) {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Sign In
         </Typography>
         <ButtonGroup size="secondary" aria-label="small outlined button group">
-        <Button onClick={props.onUserLoginClick}>User</Button>
-        <Button onClick={props.onBusinessLoginClick} style={{color: "white", backgroundColor: "#3f51b5"}}>Business</Button>
+        <Button onClick={props.onUserLoginClick} style={{marginTop: "10px"}}>User</Button>
+        <Button onClick={props.onBusinessLoginClick} style={{color: "white", backgroundColor: "#3f51b5", marginTop: "10px"}}>Business</Button>
         </ButtonGroup>
         <form className={classes.form} noValidate>
           <TextField

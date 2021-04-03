@@ -16,7 +16,7 @@ import Container from '@material-ui/core/Container';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" color="textSecondary" align="center" style={{marginTop: "-19px"}}>
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
         Small Connections
@@ -51,18 +51,18 @@ export default function BusinessSignUp(props) {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
+    <Container component="main" maxWidth="xs" style={{marginTop: "-18px"}}> {/*Testing height of form here*/}
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign up
+          Sign Up
         </Typography>
         <ButtonGroup size="secondary" aria-label="small outlined button group">
-        <Button onClick={props.onUserClick}>User</Button>
-        <Button onClick={props.onBusinessClick}style={{color: "white", backgroundColor: "#3f51b5"}}>Business</Button>
+        <Button onClick={props.onUserClick} style={{marginTop: "10px"}}>User</Button>
+        <Button onClick={props.onBusinessClick}style={{color: "white", backgroundColor: "#3f51b5", marginTop: "10px"}}>Business</Button>
         </ButtonGroup>
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
@@ -87,6 +87,18 @@ export default function BusinessSignUp(props) {
                 label="Last Name"
                 name="lastName"
                 autoComplete="lname"
+              />
+            </Grid>
+            {/*TEST NEW FORM ENTRY HERE*/}
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                id="Business Name"
+                label="Business Name"
+                name="Business Name"
+                autoComplete="Business Name"
               />
             </Grid>
             <Grid item xs={12}>

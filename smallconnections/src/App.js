@@ -16,13 +16,13 @@ const Pages = {
 };
 
 function App() {
-  const [page, setPage] = useState(Pages.USERSIGNUP); //makes sense, im gonna figure that part out tonight, gotta get ready for work for now, thanks so much! no problem, bye
+  const [page, setPage] = useState(Pages.USERSIGNUP);
   const currentPage =
     //page === Pages.HOMEPAGE ? <App
     page === Pages.USERSIGNUP ? <UserSignUp onBusinessClick={() => setPage(Pages.BUSINESSSIGNUP)}/> :
     page === Pages.USERLOGIN ? <UserSignIn onBusinessLoginClick={() => setPage(Pages.BUSINESSLOGIN)}/> :
-    page === Pages.BUSINESSSIGNUP ? <BusinessSignUp onUserClick={() => setPage(Pages.USERLOGIN)}/> :
-    page === Pages.BUSINESSLOGIN ? <BusinessSignIn onUserLoginClick={() => setPage(Pages.BUSINESSLOGIN)}/> :
+    page === Pages.BUSINESSSIGNUP ? <BusinessSignUp onUserClick={() => setPage(Pages.USERSIGNUP)}/> :
+    page === Pages.BUSINESSLOGIN ? <BusinessSignIn onUserLoginClick={() => setPage(Pages.USERLOGIN)}/> :
     null;
 
   return (
