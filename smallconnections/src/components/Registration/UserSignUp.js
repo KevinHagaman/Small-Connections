@@ -57,7 +57,7 @@ export default function UserSignUp(props) {
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
+          <LockOutlinedIcon/>
         </Avatar>
         <Typography component="h1" variant="h5">
           Sign Up
@@ -68,7 +68,7 @@ export default function UserSignUp(props) {
         </ButtonGroup>
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={2} sm={6}>
               <TextField
                 autoComplete="fname"
                 name="firstName"
