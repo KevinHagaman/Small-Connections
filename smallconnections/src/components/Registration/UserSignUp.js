@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup'
@@ -50,7 +50,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function UserSignUp(props) {
   const classes = useStyles();
-  
+  const [firstName, setFirstName] = useState("");
+
+  const onSubmitClick = () => {
+    props.onSubmitClick({firstName});
+  }
 
   return (
     <Container component="main" maxWidth="xs" style={{marginTop: "-18px", backgroundColor: "#edf0f0", borderRadius: "10px", paddingBottom: "1px"}}>
@@ -78,6 +82,8 @@ export default function UserSignUp(props) {
                 id="firstName"
                 label="First Name"
                 autoFocus
+                onChange = {e => {setFirstName(e.target.value)}}
+                value = {firstName}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -133,8 +139,7 @@ export default function UserSignUp(props) {
               />
             </Grid>
           </Grid>
-          <Button
-            type="submit"
+          <Button onClick={onSubmitClick} //EMAIL CONFIRMATION ATTEMPT
             fullWidth
             variant="contained"
             color="primary"

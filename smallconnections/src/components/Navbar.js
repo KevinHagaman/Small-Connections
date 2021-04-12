@@ -10,7 +10,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   padding: 1rem 2 rem;
   z-index: 100;
-  position: fixed;
   width: 100%;
   background: white;
 `;
