@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/businesses",
+            "lambdaFunction": "businessLambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/businesses"
+        }
+    ],
+    "resourceName": "businessapi",
+    "apiName": "businessapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "businessLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-smallconnections-dev-104316-authRole",
+        "unAuthRoleName": "amplify-smallconnections-dev-104316-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "businessLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

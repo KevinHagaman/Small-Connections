@@ -1,0 +1,7 @@
+{
+    "tableName": "SmallConnectionsAWS",
+    "partitionKeyName": "id",
+    "partitionKeyType": "N",
+    "sortKeyName": "name",
+    "sortKeyType": "S"
+}
