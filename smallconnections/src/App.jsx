@@ -6,9 +6,9 @@ import UserSignIn from './components/Login/UserSignIn';
 import BusinessSignIn from './components/Login/BusinessSignIn';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import awsconfig from'./aws-exports';
-import {withAuthenticator} from '@aws-amplify/ui-react'
+// import {withAuthenticator} from '@aws-amplify/ui-react'
 import GlobalStyle from './globalStyles';
-import { listTodos } from './graphql/queries';
+import { listBusinesss, listTodos } from './graphql/queries';
 
 Amplify.configure(awsconfig)
 
@@ -21,7 +21,7 @@ const Pages = {
 };
 
 function App() {
-  
+
   const [page, setPage] = useState(Pages.USERSIGNUP);
   const currentPage =
     //page === Pages.HOMEPAGE ? <App
@@ -33,23 +33,23 @@ function App() {
 
    // <AmplifySignOut />
    // eslint-disable-next-line
-  const [info, setInfo] = useState([]);
+   const [business, setBusiness] = useState([])
 
-  useEffect(() => {
-      fetchInfo()
-  }, []);
-
-  const fetchInfo = async () => { // function to pull info from graphql schema configuration
-      try {
-          const infoData = await API.graphql(graphqlOperation(listTodos));
-          const infoList = infoData.data.listTodos.items;
-          console.log('User Info', infoList);
-          setInfo(infoList);
-        } catch (error) {
-          console.log('error on fetching info', error);
-        }
-
-  }
+   useEffect(() => {
+       fetchBusinesses();
+   }, []);
+   
+   const fetchBusinesses = async () => {
+     try
+     {
+         const businessData = await API.graphql(graphqlOperation(listBusinesss));
+         const businessList = businessData.data.listBusinesss.items;
+         console.log('business list', businessList);
+         setBusiness(businessList);
+     } catch (error){
+         console.log('error on fetching businesses', error);
+     }
+   }
 
   return (
     <>
@@ -61,6 +61,6 @@ function App() {
   );
 }
 
-export default withAuthenticator (App);
+export default (App);
 
 

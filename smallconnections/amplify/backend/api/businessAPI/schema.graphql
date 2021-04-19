@@ -1,0 +1,11 @@
+type Business @model {
+  businessid: ID!
+  name: String!
+  businesstype: String!
+  state: String!
+  zipcode: Int!
+  like: Int!
+  owner: String!
+}
+
+
