@@ -17,6 +17,9 @@
           "deploymentBucketName": "amplify-smallconnections-dev-122834-deployment",
           "s3Key": "amplify-builds/businesses-414445752f7231334c45-build.zip"
         }
+      },
+      "auth": {
+        "SmallConnections": {}
       }
     }
   }
