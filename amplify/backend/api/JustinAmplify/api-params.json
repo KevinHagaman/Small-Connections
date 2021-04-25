@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/business/{id}",
+            "lambdaFunction": "businesses",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/business/*"
+        }
+    ],
+    "resourceName": "JustinAmplify",
+    "apiName": "JustinAmplify",
+    "functionArns": [
+        {
+            "lambdaFunction": "businesses"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-smallconnections-dev-122834-authRole",
+        "unAuthRoleName": "amplify-smallconnections-dev-122834-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "businesses",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "tableName": "businessInfo",
+    "partitionKeyName": "BusinessId",
+    "partitionKeyType": "N"
+}
