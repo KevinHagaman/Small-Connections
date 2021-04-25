@@ -10,6 +10,14 @@
       "StackName": "amplify-smallconnections-dev-122834",
       "StackId": "arn:aws:cloudformation:us-east-1:816507948362:stack/amplify-smallconnections-dev-122834/49ccf460-a5e3-11eb-bfd0-126b6ef530bb",
       "AmplifyAppId": "du75mhjevbhty"
+    },
+    "categories": {
+      "function": {
+        "businesses": {
+          "deploymentBucketName": "amplify-smallconnections-dev-122834-deployment",
+          "s3Key": "amplify-builds/businesses-414445752f7231334c45-build.zip"
+        }
+      }
     }
   }
 }
