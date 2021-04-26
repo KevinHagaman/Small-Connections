@@ -1,9 +1,6 @@
 import { ModelInit, MutableModel, PersistentModelConstructor } from "@aws-amplify/datastore";
 
 
-
-
-
 export declare class Administrator {
   readonly id: string;
   readonly EmailAddress: string;
