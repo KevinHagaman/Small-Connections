@@ -4,8 +4,11 @@ import { schema } from './schema';
 
 
 
-const { Todo } = initSchema(schema);
+const { Administrator, AppUser, BusinessOwner, Business } = initSchema(schema);
 
 export {
-  Todo
+  Administrator,
+  AppUser,
+  BusinessOwner,
+  Business
 };

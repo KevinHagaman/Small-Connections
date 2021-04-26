@@ -1,5 +1,29 @@
-type Todo @model {
+type Administrator @model @auth(rules: [{allow: public}]) {
   id: ID!
-  name: String!
-  description: String
+  EmailAddress: String!
+  Password: ID!
 }
+
+type AppUser @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  EmailAddress: String!
+  Password: ID!
+}
+
+type BusinessOwner @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String!
+  EmailAddress: String!
+  Password: ID!
+  Business: Business @connection
+}
+
+type Business @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String!
+  State: String!
+  Zipcode: Int!
+  Type: String!
+  Owner: String!
+}
+ 
